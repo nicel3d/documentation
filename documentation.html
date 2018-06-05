@@ -1,124 +1,200 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bumerang Android</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
   <link rel="stylesheet" href="./css/device-mockups.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <style>
-      .device-wrapper{
+    .device-wrapper {
+      margin: 0 auto;
+      padding-bottom: 30px;
+    }
+
+    .heading-block {
+      padding-top: 50%;
+    }
+
+    .screen {
+      background-position: center;
+    }
+
+    .static-header {
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      position: relative;
+      background-color: rgb(32, 66, 111);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-attachment: fixed;
+      color: white;
+    }
+
+    .block-text {
+      height: 100%;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    @media (max-width: 740px) {
+      p {
+        width: 80%;
+        text-align: center;
         margin: 0 auto;
       }
-      .heading-block{
-        padding-top: 50%;
-      }
-      .screen {
-        background-position: center;
-      }
-      .static-header {
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        position: relative;
-        background-color: rgb(32 66 111);
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-attachment: fixed;
-        color:white;
     }
-    </style>
+  </style>
 </head>
+
 <body>
   <div id="hero" class="static-header image-version window-height light-text hero-section clearfix" style="min-height: 200px;">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-            <div class="heading-block animated align-center fadeIn" style="color: rgba(255 255 255 0.87);">
-              <h1> Инструкция по использованию приложения Бумеранг.</h1>
-              <span class="small"> В данной инструкции для пользователя будет подробно и по шагам описан процесс регистрации в приложении Бумеранг, а так же описание его основных функций и возможностей.</span>
-            </div>
+          <div class="heading-block animated align-center fadeIn" style="color: rgba(255 255 255 0.87);">
+            <h1> Инструкция по использованию приложения Бумеранг.</h1>
+            <p class="small"> В данной инструкции для пользователя будет подробно и по шагам описан процесс регистрации в приложении Бумеранг,
+              а так же описание его основных функций и возможностей.</p>
+            <br>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
   <div class="container">
     <br>
-    <div class="row">
-      <div class="col-md-6">  
-        <span class="justify-content-center align-self-center text-justify">
-          После открытия приложения Вы попадаете на страницу с кратким описанием возможностей приложения Бумеранг. Если это Вам не интересно - нажмите "пропустить". 
-          <br>
-        </span>
-      </div>
-      <div class="col-md-6">
-          <div class="device-wrapper">
-            <div class="device" data-device="galaxyS5" data-orientation="portrait" data-color="gold">
-              <div class="screen" style="background-image: url('./screen/1.jpg');"></div>
-            </div>
-        </div>    
-      </div>
-    </div>
-    <hr class="my-4">
+
     <div class="row">
       <div class="col-md-6">
-          <div class="device-wrapper">
-            <div class="device" data-device="galaxyS5" data-orientation="portrait" data-color="gold">
-              <div class="screen"style="background-image: url('./screen/2.jpg');"></div>
-            </div>
-        </div>    
-      </div>
-    <hr class="my-4">
-    <div class="row">
-    <div class="col-md-6">
         <div class="device-wrapper">
           <div class="device" data-device="galaxyS5" data-orientation="portrait" data-color="gold">
-            <div class="screen"style="background-image: url('./screen/3.jpg');"></div>
+            <div class="screen" style="background-image: url('./screen/1.jpg');"></div>
           </div>
-      </div>    
-    </div>
-      <div class="col-md-6 d-flex">
-        <span class="justify-content-center align-self-center text-justify">
-            Теперь можно приступать к регистрации. Но перед этим не забудьте ознакомиться с "Пользовательским соглашением"" и "Политикой конфиденциальности". 
-        </span>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex block-text">
+          <p class="align-self-center">
+            После открытия приложения Вы попадаете на страницу с кратким описанием возможностей приложения Бумеранг. Если это Вам не
+            интересно - нажмите "пропустить".
+          </p>
+        </div>
       </div>
     </div>
+
     <hr class="my-4">
+
     <div class="row">
-        <div class="col-md-4">
-            <div class="device-wrapper">
-              <div class="device" data-device="galaxyS5" data-orientation="portrait" data-color="gold">
-                <div class="screen"style="background-image: url('./screen/4.jpg');"></div>
-              </div>
-            </div>
-            <br>
-            <p> Вы можете выбрать удобный способ регистрации: по номеру телефона, по e-mail, или же войти с помошью социальных сетей ВКонтакте или Fasebook.</p>
+      <div class="col-md-6">
+        <div class="device-wrapper">
+          <div class="device" data-device="galaxyS5" data-orientation="portrait" data-color="gold">
+            <div class="screen" style="background-image: url('./screen/2.jpg');"></div>
+          </div>
         </div>
-        <div class="col-md-4">
-            <div class="device-wrapper">
-              <div class="device" data-device="galaxyS5" data-orientation="portrait" data-color="gold">
-                <div class="screen"style="background-image: url('./screen/5.jpg');"></div>
-              </div>
-            </div>
-            <br>
-            <p>При регистрации по номеру телефона Вам понадобится иметь доступ к этому номеру - на него придет sms с кодом подтверждения регистрации.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex block-text">
+          <p class="align-self-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quas dolorum saepe temporibus, doloremque optio maxime
+            unde ea sit? Voluptatibus, dolores ea! Ipsum optio voluptate magnam, rerum illo quisquam saepe.
+          </p>
         </div>
-        <div class="col-md-4">
-            <div class="device-wrapper">
-              <div class="device" data-device="galaxyS5" data-orientation="portrait" data-color="gold">
-                <div class="screen"style="background-image: url('./screen/6.jpg');"></div>
-              </div>
-            </div>
-            <br>
-            <p>текст.</p>
-        </div>
+      </div>
     </div>
+
+    <hr class="my-4">
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="device-wrapper">
+          <div class="device" data-device="galaxyS5" data-orientation="portrait" data-color="gold">
+            <div class="screen" style="background-image: url('./screen/3.jpg');"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex block-text">
+          <p class="align-self-center">
+            Теперь можно приступать к регистрации. Но перед этим не забудьте ознакомиться с "Пользовательским соглашением"" и "Политикой
+            конфиденциальности".
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-4">
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="device-wrapper">
+          <div class="device" data-device="galaxyS5" data-orientation="portrait" data-color="gold">
+            <div class="screen" style="background-image: url('./screen/4.jpg');"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex block-text">
+          <p class="align-self-center">
+            Вы можете выбрать удобный способ регистрации: по номеру телефона, по e-mail, или же войти с помошью социальных сетей ВКонтакте
+            или Fasebook.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-4">
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="device-wrapper">
+          <div class="device" data-device="galaxyS5" data-orientation="portrait" data-color="gold">
+            <div class="screen" style="background-image: url('./screen/5.jpg');"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex block-text">
+          <p class="align-self-center">
+            При регистрации по номеру телефона Вам понадобится иметь доступ к этому номеру - на него придет sms с кодом подтверждения
+            регистрации.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-4">
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="device-wrapper">
+          <div class="device" data-device="galaxyS5" data-orientation="portrait" data-color="gold">
+            <div class="screen" style="background-image: url('./screen/6.jpg');"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex block-text">
+          <p class="align-self-center">
+            текст.
+          </p>
+        </div>
+      </div>
+    </div>
+
   </div>
+
+
 </body>
+
 </html>
